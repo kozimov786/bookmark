@@ -1,0 +1,12 @@
+
+@include breakpoint-down (700px){
+    .burger{
+        position: absolute;
+        top: 35px;
+        right: 25px;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../images/burger-open.svg");
+    }
+}

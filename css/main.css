@@ -398,6 +398,10 @@ body {
   margin: 0 auto;
 }
 
+.site-header {
+  position: relative;
+}
+
 .site-header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,6 +414,16 @@ body {
           justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 700px) {
+  .site-header__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .sitenav__link {
+    color: #fff;
+  }
 }
 
 .sitenav__list {
@@ -461,7 +475,90 @@ body {
   color: #fff;
 }
 
+@media only screen and (max-width: 700px) {
+  .sitenav {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    width: 100%;
+    padding: 46px 32px;
+    background-color: #242a45;
+    position: absolute;
+    top: 80px;
+    left: 0;
+  }
+  .sitenav .sitenav__link {
+    color: #fff;
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 2.3px;
+  }
+  .sitenav .sitenav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sitenav .sitenav__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .sitenav .sitenav__item {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #fff;
+    padding: 24px 0;
+  }
+}
+
+.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
 .site-log__img {
   display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  .burger {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/burger-open.svg");
+  }
+}
+
+.btn {
+  padding: 10px 24px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+  background-color: #5267DF;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.hero {
+  max-width: 540px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero__title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+  color: #242A45;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=main.css.map */
