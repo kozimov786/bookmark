@@ -27,3 +27,21 @@
 .tabs-features__item--active .tabs-features__link{
     box-shadow:0 4px $color-accent-red;
 }
+@include breakpoint-down(767px){
+    .tabs-features{
+        flex-direction: column;
+        text-align: center;
+        &::after{
+            display: none;
+        }
+    }
+    .tabs-features__item{
+        border-bottom: 1px solid rgba(73, 93, 207, 0.2);
+    }
+    .tabs-features__item--active .tabs-features__link{
+        box-shadow:0 4px $color-accent-red;
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

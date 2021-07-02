@@ -26,7 +26,9 @@
     color: $color-title-black;
     text-align-last: left;
     display: block;
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
+    white-space: nowrap;
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -74,4 +76,16 @@
   width: 114px;
   margin-left: auto;
   margin-right: auto;
+}
+@include breakpoint-down(427px){
+    .accordion__panel{
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 32px;
+    }
+    .faqs__header--title{
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.075px;
+    }
 }

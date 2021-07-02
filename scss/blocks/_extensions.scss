@@ -60,3 +60,18 @@
     align-items: center;
     justify-content: center;
 }
+@include breakpoint-down(880px){
+    .extensions__contianer{
+        flex-direction: column;
+    }
+    .extension__card:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .extension__card:nth-child(2){
+        margin-top: 0;
+    }
+    .extension__card:last-child{
+        margin-top: 0;
+    }
+}
