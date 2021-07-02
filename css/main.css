@@ -551,8 +551,8 @@ body {
 .btn:hover {
   background-color: #fff;
   color: #5267DF;
-  -webkit-box-shadow: 0 0 0 2px #5267DF;
-          box-shadow: 0 0 0 2px #5267DF;
+  -webkit-box-shadow: inset 0 0 0 2px #5267DF;
+          box-shadow: inset 0 0 0 2px #5267DF;
 }
 
 .hero {
@@ -938,5 +938,138 @@ body {
   width: 114px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contact {
+  padding-top: 58px;
+  padding-bottom: 74px;
+  background-color: #5267DF;
+  color: #fff;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact__text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 24px;
+  letter-spacing: 5px;
+}
+
+.contact__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  max-width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 36px;
+  letter-spacing: -0.1px;
+}
+
+.contact__input {
+  width: 300px;
+  padding: 10px 20px;
+  font-weight: normal;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  margin-right: 16px;
+  outline-color: #FA5959;
+}
+
+.contact__input::-webkit-input-placeholder {
+  color: rgba(36, 42, 69, 0.250109);
+}
+
+.contact__input:-ms-input-placeholder {
+  color: rgba(36, 42, 69, 0.250109);
+}
+
+.contact__input::-ms-input-placeholder {
+  color: rgba(36, 42, 69, 0.250109);
+}
+
+.contact__input::placeholder {
+  color: rgba(36, 42, 69, 0.250109);
+}
+
+.contact__btn {
+  background-color: #FA5959;
+  color: #fff;
+  border: none;
+}
+
+.contact__btn:hover {
+  color: #FA5959;
+  -webkit-box-shadow: inset 0 0 0 2px #FA5959;
+          box-shadow: inset 0 0 0 2px #FA5959;
+}
+
+.site-footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #242A45;
+  color: #fff;
+}
+
+.site-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-footera__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
+.site-footer__logo {
+  margin-right: 65px;
+}
+
+.site-footer__logo img {
+  display: block;
+}
+
+.site-footer__item:not(:last-child) {
+  margin-right: 44px;
+}
+
+.site-footer__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+}
+
+.site-footer__link:hover {
+  color: #FA5959;
+}
+
+.site-footer__link .site-footer__social--link:last-child {
+  margin-left: 16px;
+}
+
+.social--link__facebook {
+  margin-right: 40px;
 }
 /*# sourceMappingURL=main.css.map */

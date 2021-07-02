@@ -13,6 +13,6 @@
     &:hover{
         background-color: #fff;
         color: $color-accent-blue;
-        box-shadow: 0 0 0 2px $color-accent-blue;
+        box-shadow:inset 0 0 0 2px $color-accent-blue;
     }
 }
