@@ -9,4 +9,10 @@
     font-size: 14px;
     line-height: 28px;
     letter-spacing: 0.25px;
+    transition: 0.4s ease;
+    &:hover{
+        background-color: #fff;
+        color: $color-accent-blue;
+        box-shadow: 0 0 0 2px $color-accent-blue;
+    }
 }

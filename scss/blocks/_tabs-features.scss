@@ -1,0 +1,29 @@
+.tabs-features{
+    position: relative;
+    display: flex;
+    @include list-unstyled;
+    justify-content: center;
+    &::after{
+        content: "";
+        width: 700px;
+        height: 1px;
+        background-color: rgba(73, 93, 207, 0.2);
+        position: absolute;
+        top: 61px;
+        left: 18%;
+    }
+}
+
+.tabs-features__link{
+    display: block;
+    text-decoration: none;
+    color: $color-title-black;
+    padding: 15px 45px;
+
+    &:hover{
+        color: $color-accent-red;
+    }
+}
+.tabs-features__item--active .tabs-features__link{
+    box-shadow:0 4px $color-accent-red;
+}
