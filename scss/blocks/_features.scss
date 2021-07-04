@@ -118,3 +118,17 @@
         transform: translateX(-50%);
     }
 }
+@include breakpoint-down(450px){
+    .features__img{
+        width:300px;
+        height: auto;
+    }
+    .panel__text{
+      font-size: 15px;
+      line-height: 25px;
+    }
+    .features__info{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
