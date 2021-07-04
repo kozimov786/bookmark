@@ -117,6 +117,9 @@
         left:50%;
         transform: translateX(-50%);
     }
+    .features__panel--active{
+        padding-bottom: 0;
+    }
 }
 @include breakpoint-down(450px){
     .features__img{
