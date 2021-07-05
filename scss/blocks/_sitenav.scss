@@ -38,8 +38,9 @@
     .sitenav{
         transform: translateX(-100%);
         width: 100%;
+        min-height: 100vh;
         padding: 46px 32px;
-        background-color:$color-accent-blue;
+        background-color:rgba(36, 42, 69, 1);
         position: absolute;
         top: 80px;
         left: 0;
@@ -68,5 +69,6 @@
 .active{
     transform: translateX(0);
     transition: 0.4s ease;
+    
 }
 

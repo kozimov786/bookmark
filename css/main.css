@@ -481,8 +481,9 @@ body {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     width: 100%;
+    min-height: 100vh;
     padding: 46px 32px;
-    background-color: #5267DF;
+    background-color: #242a45;
     position: absolute;
     top: 80px;
     left: 0;
@@ -530,6 +531,9 @@ body {
     width: 20px;
     height: 20px;
     background-image: url("../../images/burger-open.svg");
+  }
+  .is-open {
+    background-image: url("../../images/icon-close.svg");
   }
 }
 
@@ -637,9 +641,6 @@ body {
   }
   .hero__container {
     text-align: center;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -649,9 +650,14 @@ body {
     padding-top: 200px;
     background-position: calc(50% + 40px) 5%;
   }
+  .hero__container {
+    width: 300px;
+  }
   .hero__text {
     font-size: 15px;
     line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .btn__wrapper {
     -webkit-box-orient: vertical;
@@ -1080,10 +1086,6 @@ body {
   max-width: 540px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.accordion__panel--wrapper p {
-  margin: 0;
 }
 
 .faqs__btn {
